@@ -1,0 +1,83 @@
+{
+  "name": "wolflee/GB2260.rb",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "",
+  "branch": "master",
+  "style": {
+    "name": "Swiss",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/SwissHeader",
+      "article": "article/SwissArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "heading": {
+      "fontWeight": 700,
+      "letterSpacing": "-0.01em"
+    },
+    "layout": {
+      "fluid": true
+    },
+    "colors": {
+      "text": "#000",
+      "background": "#fff",
+      "primary": "#05a",
+      "secondary": "#444",
+      "highlight": "#f30",
+      "border": "#ccc",
+      "muted": "#eee"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/wolflee/GB2260.rb",
+          "text": "GitHub"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "GB2260.rb",
+      "subhead": "The Ruby implementation for looking up the Chinese administrative divisions.",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "GB2260.rb: The Ruby implementation for looking up the Chinese administrative divisions.",
+          "url": null
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "wolflee",
+          "repo": "GB2260.rb"
+        }
+      ]
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "\n<p><a href=\"https://github.com/cn/GB2260/blob/v0.2/spec.md\"><img src=\"https://img.shields.io/badge/GB%2FT%202260-v0.2-blue.svg\"></a>\n<a href=\"http://badge.fury.io/rb/GB2260\"><img src=\"https://badge.fury.io/rb/GB2260.svg\"></a>\n<a href=\"https://travis-ci.org/cn/GB2260.rb\"><img src=\"https://travis-ci.org/cn/GB2260.rb.svg?branch=master\"></a>\n<a href=\"https://codeclimate.com/github/cn/GB2260.rb\"><img src=\"https://codeclimate.com/github/cn/GB2260.rb/badges/gpa.svg\"></a>\n<a href=\"https://coveralls.io/github/cn/GB2260.rb?branch=master\"><img src=\"https://coveralls.io/repos/wolflee/GB2260.rb/badge.svg?branch=master&amp;service=github\"></a></p>\n<p>The Ruby implementation for looking up the Chinese administrative divisions.</p>\n<h2>Installation</h2>\n<p>Add this line to your application&apos;s Gemfile:</p>\n<pre>gem <span class=\"hljs-string\">&apos;GB2260&apos;</span></pre><p>And then execute:</p>\n<pre><span class=\"hljs-variable\">$ </span>bundle</pre><p>Or install it yourself as:</p>\n<pre>$ gem <span class=\"hljs-keyword\">install</span> GB2260</pre><h2>Usage</h2>\n<p>The way to look up a administrative division by its GB2260 code is the basic interface\n<code>gb2260.get(code)</code>:</p>\n<pre>gb226<span class=\"hljs-number\">0</span> = GB226<span class=\"hljs-number\">0</span>.new\n\ndivision = gb226<span class=\"hljs-number\">0</span>.get(<span class=\"hljs-number\">360426</span>)\nputs division  <span class=\"hljs-comment\"># =&gt; &lt;GB2260-2014 &#x6C5F;&#x897F;&#x7701;/&#x4E5D;&#x6C5F;&#x5E02;/&#x5FB7;&#x5B89;&#x53BF;&gt;</span></pre><h2>Contributing</h2>\n<p>Bug reports and pull requests are welcome on GitHub at <a href=\"https://github.com/cn/GB2260.rb\">https://github.com/cn/GB2260.rb</a>. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the <a href=\"contributor-covenant.org\">Contributor Covenant</a> code of conduct.</p>\n<h2>License</h2>\n<p>The gem is available as open source under the terms of the <a href=\"http://opensource.org/licenses/MIT\">MIT License</a>.</p>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/wolflee/GB2260.rb",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/wolflee",
+          "text": "wolflee"
+        }
+      ]
+    }
+  ]
+}
